@@ -134,8 +134,7 @@ table {
     border-spacing: 0;
 }
 
-/*After Reset*/
-
+/*Mobile Style*/
 html {
     box-sizing: border-box;
     font-family: 'Open-sans', sans-serif;
@@ -218,7 +217,7 @@ body {
 
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: #e1f1ff;
+    background-color: #cee8fd;
 }
 
 .pricing-button.is-featured {
@@ -229,4 +228,21 @@ body {
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:focus {
     background-color: #269aff;
+}
+
+/*Desktop Style*/
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 30px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
